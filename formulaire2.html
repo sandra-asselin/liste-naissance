@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="liste.css"/>
+        <title>Moumou</title>
+        <link rel="icon" href="sucette.jpg" />
+	</head>
+
+	<body>
+		<header>
+			<titre>Liste de naissance</titre>
+		</header>
+		
+		<section id="formul">
+			<form method="post">
+				<titre class="larg">Ajouter un objet</titre>
+				
+				<input class="larg" type="text" name="nom" placeholder="Nom de l'objet"/>
+				
+                <textarea class="larg" name="description" placeholder="Description"></textarea>
+                
+                <input class="larg" type="url" name="lien" pattern="https://.*" placeholder="Links: https://exemple.fr"/>
+				
+				<input class="larg" type="file" name="miniature" accept="image/png, image/jpg">
+				
+				<select class="larg" name="categorie" id="choix-etude">
+    				<option value="rien">- Catégorie -</option>
+					<option value="categorie">Choix 1</option>
+					<option value="categorie">Choix 2</option>
+					<option value="categorie">Choix 3</option>
+					<option value="categorie">Choix 4</option>
+				</select>
+				
+				<div class="larg" id="urg">
+                    <titre>Type de choix</titre>
+                    <input type="radio" name="urgence" value="urgents" /><label id="urg2" for="urg">Urgents</label>
+					<input type="radio" name="urgence" value="normaux" /><label id="norm2" for="norm">Normaux</label>
+					<input type="radio" name="urgence" value="Déja offert" /><label id="Off" for="norm">Déja offert</label>
+					
+                </div>
+			
+				
+				<a href="liste.html"><input class="larg" id="buts2" type="submit" value="Ajouter l'objet" name="ajout"/></a>
+			</form>
+		</section>
+	</body>
+</html>
